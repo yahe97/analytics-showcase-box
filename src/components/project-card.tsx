@@ -9,7 +9,8 @@ export type Project = {
   tools: string[];
   focus: string[];
   link: string;
-  accent: "sienna" | "ink" | "sand";
+  linkLabel?: string;
+  accent: "sienna" | "ink" | "sand" | "moss";
   number: string;
 };
 
@@ -27,7 +28,7 @@ export const projects: Project[] = [
       "Highlighting trends through interactive dashboard design",
       "Making data more accessible for broader audiences",
     ],
-    link: "#",
+    link: "https://public.tableau.com/app/profile/yajaira.huerta6740/viz/DatathonCompetition/SpotifyElectionSongs",
     accent: "sienna",
   },
   {
@@ -43,7 +44,7 @@ export const projects: Project[] = [
       "Interactive dashboard design for trend comparison",
       "Visual storytelling for high-volume, multi-category data",
     ],
-    link: "#",
+    link: "https://public.tableau.com/app/profile/yajaira.huerta6740/viz/DataViz_17361394245450/NationalParksVisit",
     accent: "ink",
   },
   {
@@ -59,8 +60,26 @@ export const projects: Project[] = [
       "Structuring information to support business decisions",
       "Combining analytical thinking with intuitive presentation",
     ],
-    link: "#",
+    link: "https://toothengineersdash.lovable.app/",
     accent: "sand",
+  },
+  {
+    slug: "armr-xt1-tourniquet",
+    number: "04",
+    title: "ARMR XT1 Tourniquet Go-to-Market Strategy",
+    tagline: "MBA Capstone · Product Strategy · Go-to-Market · Commercialization",
+    description:
+      "As part of my MBA capstone, I am serving as a Product Manager supporting ARMR in the development of a go-to-market strategy for the XT1 tourniquet. The project focuses on identifying market-entry priorities, evaluating commercialization opportunities, and defining quick wins to accelerate launch readiness.",
+    tools: ["Product Strategy", "GTM", "Healthcare", "Commercialization"],
+    focus: [
+      "Assessing go-to-market opportunities and market-entry priorities",
+      "Supporting commercialization strategy for a healthcare-related product",
+      "Translating market and customer insights into actionable recommendations",
+      "Balancing strategic planning with practical execution",
+    ],
+    link: "#",
+    linkLabel: "MBA Capstone Project — Available upon request",
+    accent: "moss",
   },
 ];
 
@@ -70,7 +89,9 @@ export function ProjectCard({ project, index }: { project: Project; index: numbe
       ? "bg-accent"
       : project.accent === "ink"
         ? "bg-foreground"
-        : "bg-secondary-foreground/40";
+        : project.accent === "moss"
+          ? "bg-emerald-700"
+          : "bg-secondary-foreground/40";
 
   return (
     <motion.article

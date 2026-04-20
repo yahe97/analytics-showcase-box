@@ -27,7 +27,7 @@ function ProjectsPage() {
       <SiteHeader />
 
       <section className="mx-auto max-w-7xl px-6 pb-16 pt-20 lg:px-10 lg:pt-28">
-        <p className="font-mono text-xs uppercase tracking-[0.3em] text-muted-foreground">Projects · 03 Featured</p>
+        <p className="font-mono text-xs uppercase tracking-[0.3em] text-muted-foreground">Projects · 04 Featured</p>
         <h1 className="mt-4 font-display text-5xl font-light leading-[1.05] tracking-tight text-balance md:text-7xl">
           Where analysis meets <em className="italic text-accent">narrative</em>.
         </h1>

@@ -91,14 +91,20 @@ function ProjectDetailPage() {
         </div>
 
         <div className="mt-12 flex flex-wrap items-center gap-4">
-          <a
-            href={project.link}
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex items-center gap-2 rounded-full bg-foreground px-6 py-3 text-sm font-medium text-background transition-transform hover:-translate-y-0.5"
-          >
-            View live project →
-          </a>
+          {project.link && project.link !== "#" ? (
+            <a
+              href={project.link}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 rounded-full bg-foreground px-6 py-3 text-sm font-medium text-background transition-transform hover:-translate-y-0.5"
+            >
+              View live project →
+            </a>
+          ) : (
+            <span className="inline-flex items-center gap-2 rounded-full border border-foreground/20 bg-card px-6 py-3 text-sm font-medium text-muted-foreground">
+              {project.linkLabel ?? "Available upon request"}
+            </span>
+          )}
           <Link
             to="/contact"
             className="inline-flex items-center gap-2 rounded-full border border-foreground/20 px-6 py-3 text-sm font-medium hover:border-foreground"
