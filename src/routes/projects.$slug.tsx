@@ -48,7 +48,7 @@ export const Route = createFileRoute("/projects/$slug")({
 });
 
 function ProjectDetailPage() {
-  const { project } = Route.useLoaderData();
+  const { project } = Route.useLoaderData() as { project: (typeof projects)[number] };
 
   return (
     <div className="min-h-screen bg-background">
