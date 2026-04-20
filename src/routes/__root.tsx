@@ -36,7 +36,7 @@ export const Route = createRootRoute({
           "Portfolio of Yajaira Huerta — MBA candidate at the Robert H. Smith School of Business. Marketing intelligence, data analytics, and AI strategy.",
       },
       { name: "author", content: "Yajaira Huerta" },
-      { property: "og:title", content: "Yajaira Huerta — Portfolio" },
+      { property: "og:title", content: "Yajaira Huerta — MBA · Marketing Intelligence · Data & AI Strategy" },
       {
         property: "og:description",
         content:
@@ -44,6 +44,12 @@ export const Route = createRootRoute({
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Yajaira Huerta — MBA · Marketing Intelligence · Data & AI Strategy" },
+      { name: "description", content: "A dynamic portfolio showcasing marketing intelligence, data, and AI strategy expertise." },
+      { property: "og:description", content: "A dynamic portfolio showcasing marketing intelligence, data, and AI strategy expertise." },
+      { name: "twitter:description", content: "A dynamic portfolio showcasing marketing intelligence, data, and AI strategy expertise." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/02a712f3-bb86-47a5-bc3c-91ef818eb887/id-preview-cd04f312--ecc7fa74-1751-41f5-a65c-bad15de85c05.lovable.app-1776727707580.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/02a712f3-bb86-47a5-bc3c-91ef818eb887/id-preview-cd04f312--ecc7fa74-1751-41f5-a65c-bad15de85c05.lovable.app-1776727707580.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
