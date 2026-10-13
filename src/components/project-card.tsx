@@ -69,7 +69,7 @@ export const projects: Project[] = [
     title: "ARMR XT1 Tourniquet Go-to-Market Strategy",
     tagline: "MBA Capstone · Product Strategy · Go-to-Market · Commercialization",
     description:
-      "As part of my MBA capstone, I am serving as a Product Manager supporting ARMR in the development of a go-to-market strategy for the XT1 tourniquet. The project focuses on identifying market-entry priorities, evaluating commercialization opportunities, and defining quick wins to accelerate launch readiness.",
+      "As part of my MBA capstone, I served as a Product Manager supporting ARMR in the development of a go-to-market strategy for the XT1 tourniquet. The project focused on identifying market-entry priorities, evaluating commercialization opportunities, and defining quick wins to accelerate launch readiness.",
     tools: ["Product Strategy", "GTM", "Healthcare", "Commercialization"],
     focus: [
       "Assessing go-to-market opportunities and market-entry priorities",
