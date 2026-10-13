@@ -19,8 +19,8 @@ export const Route = createFileRoute("/contact")({
 
 const channels = [
   { label: "Email", value: "yhuertae@umd.edu", href: "mailto:yhuertae@umd.edu" },
-  { label: "LinkedIn", value: "Connect on LinkedIn", href: "#" },
-  { label: "Tableau Public", value: "View dashboards", href: "#" },
+  { label: "LinkedIn", value: "Connect on LinkedIn", href: "https://www.linkedin.com/in/yajairahuertae/" },
+  { label: "Tableau Public", value: "View dashboards", href: "https://public.tableau.com/app/profile/yajaira.huerta6740" },
 ];
 
 function ContactPage() {

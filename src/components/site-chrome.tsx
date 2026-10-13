@@ -61,8 +61,8 @@ export function SiteFooter() {
           <p className="mb-3 text-xs uppercase tracking-[0.2em] text-muted-foreground">Elsewhere</p>
           <ul className="space-y-2">
             <li><a href="mailto:yhuertae@umd.edu" className="hover:text-accent">yhuertae@umd.edu</a></li>
-            <li><a href="#" className="hover:text-accent">LinkedIn →</a></li>
-            <li><a href="#" className="hover:text-accent">Tableau Public →</a></li>
+            <li><a href="https://www.linkedin.com/in/yajairahuertae/" target="_blank" rel="noreferrer" className="hover:text-accent">LinkedIn →</a></li>
+            <li><a href="https://public.tableau.com/app/profile/yajaira.huerta6740" target="_blank" rel="noreferrer" className="hover:text-accent">Tableau Public →</a></li>
           </ul>
         </div>
       </div>
