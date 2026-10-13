@@ -48,7 +48,13 @@ function AboutPage() {
             </div>
             <div>
               <p className="font-mono text-xs uppercase tracking-widest text-muted-foreground">Based in</p>
-              <p className="mt-2 text-sm">Maryland, USA · Working across the U.S. and Peru</p>
+              <p className="mt-2 text-sm">Lanham, Maryland · Working across the U.S. and Peru</p>
+            </div>
+            <div>
+              <p className="font-mono text-xs uppercase tracking-widest text-muted-foreground">Education</p>
+              <p className="mt-2 text-sm">MBA, AI & Business Strategy — Smith School (May 2026)</p>
+              <p className="mt-2 text-sm">MIT MicroMasters, Statistics & Data Science</p>
+              <p className="mt-2 text-sm">B.S. Systems Engineering — UNI, Lima</p>
             </div>
           </div>
         </aside>
@@ -66,7 +72,7 @@ function AboutPage() {
               { k: "Industries", v: "Financial Services · Telecom · Consumer · Startups" },
               { k: "Geographies", v: "United States · Peru" },
               { k: "Functions", v: "Analytics · Marketing Intelligence · GTM" },
-              { k: "Education", v: "MBA, Smith School of Business" },
+              { k: "Education", v: "MBA, Smith School · MIT MicroMasters (Statistics & Data Science) · B.S. Systems Engineering" },
             ].map((row) => (
               <div key={row.k} className="border-t border-border pt-4">
                 <p className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">{row.k}</p>
@@ -86,7 +92,33 @@ function AboutPage() {
         </div>
       </section>
 
-      <SiteFooter />
+      <section className="border-t border-border/60 bg-secondary/30">
+        <div className="mx-auto max-w-5xl px-6 py-20 lg:px-10">
+          <p className="font-mono text-xs uppercase tracking-[0.3em] text-muted-foreground">Experience</p>
+          <h2 className="mt-3 font-display text-4xl font-light tracking-tight text-balance md:text-5xl">
+            Where the work has happened.
+          </h2>
+          <div className="mt-12 space-y-px overflow-hidden rounded-3xl border border-border bg-border">
+            {[
+              { role: "GTM Fellow, CRM & Revenue Operations", org: "BioBuzz · Baltimore, MD", when: "Jun 2025 – Present", note: "HubSpot data architecture, executive GTM dashboards, and a 2.7× newsletter click-rate lift through segmentation." },
+              { role: "Digital Marketing Strategy & Content — MBA Intern", org: "Eternus Bio Corp · College Park, MD", when: "Jun 2025 – Present", note: "Digital strategy across 5 platforms, leading 6 team members; KPI reporting with GA4, Meta & YouTube Analytics." },
+              { role: "Data Scientist", org: "BBVA · Lima, Peru", when: "Jun 2022 – Jul 2024", note: "Predictive models for digital loan sales (+8%), +20% cross-selling revenue, and A/B-tested ML recommendations." },
+              { role: "Digital Data Analyst", org: "Belcorp · Lima, Peru", when: "Jul 2021 – Jun 2022", note: "Behavioral analytics that cut decision time 25%, improved targeting 30%, and reduced manual reporting 50%." },
+            ].map((job) => (
+              <div key={job.org} className="grid gap-2 bg-card p-8 md:grid-cols-12 md:items-baseline">
+                <p className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground md:col-span-3">{job.when}</p>
+                <div className="md:col-span-9">
+                  <p className="font-display text-lg leading-snug">{job.role}</p>
+                  <p className="mt-0.5 text-sm text-accent">{job.org}</p>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground text-pretty">{job.note}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <SiteFooter/>
     </div>
   );
 }
