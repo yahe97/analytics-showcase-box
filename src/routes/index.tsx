@@ -189,14 +189,34 @@ function HomePage() {
             </div>
             <ul className="lg:col-span-8 lg:divide-y lg:divide-border">
               {[
-                "Built cross-platform marketing dashboards and AI-driven insight tools in a startup environment.",
-                "Developed predictive models and business analytics solutions for revenue growth in financial services.",
-                "Supported business strategy through customer segmentation, channel optimization, and digital analytics.",
-                "Led cross-functional initiatives across the U.S. and Peru in enterprise and startup settings.",
+                {
+                  role: "GTM Fellow, CRM & Revenue Operations",
+                  org: "BioBuzz · Baltimore, MD · 2025–Present",
+                  note: "Architected a HubSpot data model unifying Sales, GTM & Customer Success; gave leadership weekly visibility into 51% platform-user growth and lifted newsletter click rate 2.7× in six weeks.",
+                },
+                {
+                  role: "Digital Marketing Strategy & Content — MBA Intern",
+                  org: "Eternus Bio Corp · College Park, MD · 2025–Present",
+                  note: "Own digital marketing strategy and content across 5 platforms, managing a 6-person team; built KPI dashboards in GA4, Meta Insights & YouTube Analytics to steer campaign decisions.",
+                },
+                {
+                  role: "Data Scientist",
+                  org: "BBVA · Lima, Peru · 2022–2024",
+                  note: "Increased digital loan sales 8% with predictive adoption models; +20% cross-selling revenue and 30% faster analysis through SQL, PySpark & Tableau segmentation automation.",
+                },
+                {
+                  role: "Digital Data Analyst",
+                  org: "Belcorp · Lima, Peru · 2021–2022",
+                  note: "Reduced decision-making time 25% by translating behavioral data into product recommendations; cut manual reporting 50% with Tableau dashboards and improved targeting 30%.",
+                },
               ].map((item, i) => (
                 <li key={i} className="flex items-start gap-6 border-b border-border py-6 lg:border-b-0 lg:py-8">
                   <span className="font-mono text-xs text-accent">0{i + 1}</span>
-                  <p className="text-base leading-relaxed text-foreground/90 text-pretty md:text-lg">{item}</p>
+                  <div>
+                    <p className="font-display text-lg leading-snug">{item.role}</p>
+                    <p className="mt-1 font-mono text-[10px] uppercase tracking-widest text-muted-foreground">{item.org}</p>
+                    <p className="mt-2 text-base leading-relaxed text-muted-foreground text-pretty">{item.note}</p>
+                  </div>
                 </li>
               ))}
             </ul>
@@ -213,19 +233,19 @@ function HomePage() {
           {[
             {
               title: "Business & Strategy",
-              items: ["Marketing Intelligence", "Go-to-Market Strategy", "Customer Insights", "Business Analytics", "Growth Strategy"],
+              items: ["GTM Strategy", "Marketing Intelligence", "ICP Development", "Customer Segmentation", "Product Adoption"],
             },
             {
               title: "Analytics & Visualization",
-              items: ["Tableau", "Power BI", "Excel", "Looker Studio", "Data Storytelling"],
+              items: ["Tableau", "Power BI", "Looker Studio", "GA4 · Meta · YouTube Analytics", "KPI Dashboards", "Data Storytelling"],
             },
             {
               title: "Technical",
-              items: ["Python", "R", "SQL", "Google Analytics", "Redshift", "GCP", "Hadoop"],
+              items: ["Python", "R", "SQL", "PySpark", "Hadoop", "GCP", "Predictive Modeling", "A/B Testing"],
             },
             {
               title: "Leadership",
-              items: ["Cross-functional collaboration", "Stakeholder communication", "Board presentations", "Team coordination"],
+              items: ["HubSpot CRM", "Stakeholder Management", "Board presentations", "Team coordination", "AI-Enabled Workflows"],
             },
           ].map((group) => (
             <div key={group.title} className="bg-card p-8">
