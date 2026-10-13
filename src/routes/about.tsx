@@ -8,12 +8,12 @@ export const Route = createFileRoute("/about")({
       {
         name: "description",
         content:
-          "About Yajaira Huerta: MBA candidate focused on AI & Business Strategy, with experience in financial services, telecommunications, consumer business, and startups.",
+          "About Yajaira Huerta: MBA graduate focused on AI & Business Strategy, with experience in financial services, telecommunications, consumer business, and startups.",
       },
       { property: "og:title", content: "About — Yajaira Huerta" },
       {
         property: "og:description",
-        content: "MBA candidate at Smith School. Data, AI & business strategy.",
+        content: "MBA graduate, Smith School. Data, AI & business strategy.",
       },
     ],
   }),
@@ -36,8 +36,8 @@ function AboutPage() {
         <aside className="lg:col-span-1">
           <div className="sticky top-24 space-y-6">
             <div>
-              <p className="font-mono text-xs uppercase tracking-widest text-muted-foreground">Currently</p>
-              <p className="mt-2 font-display text-xl">MBA Candidate</p>
+              <p className="font-mono text-xs uppercase tracking-widest text-muted-foreground">Degree</p>
+              <p className="mt-2 font-display text-xl">MBA, Class of 2026</p>
               <p className="text-sm text-muted-foreground">
                 Robert H. Smith School of Business · University of Maryland
               </p>
@@ -64,7 +64,7 @@ function AboutPage() {
             I'm passionate about using <span className="text-accent">data, AI, and business strategy</span> to solve real-world problems. My background spans financial services, telecommunications, consumer business, and startup environments — leading analytics initiatives, building dashboards, supporting go-to-market decisions, and translating insight into action.
           </p>
           <p className="text-base leading-relaxed text-muted-foreground text-pretty">
-            Currently, I'm pursuing an MBA focused on AI & Business Strategy, with interests in marketing intelligence, strategic growth, healthcare innovation, and technology commercialization. I believe the strongest decisions live where rigorous analysis meets clear storytelling — and I work to keep both in the same room.
+            My MBA focused on AI & Business Strategy gave me a lens for marketing intelligence, strategic growth, healthcare innovation, and technology commercialization. I believe the strongest decisions live where rigorous analysis meets clear storytelling — and I work to keep both in the same room.
           </p>
 
           <div className="grid gap-6 pt-6 sm:grid-cols-2">

@@ -11,7 +11,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "MBA candidate translating data, AI, and business strategy into measurable growth across startups and multinationals.",
+          "MBA graduate translating data, AI, and business strategy into measurable growth across startups and multinationals.",
       },
       { property: "og:title", content: "Yajaira Huerta — Portfolio" },
       {
@@ -68,7 +68,7 @@ function HomePage() {
               transition={{ duration: 0.8, delay: 0.35 }}
               className="mt-8 max-w-xl text-base leading-relaxed text-muted-foreground text-pretty md:text-lg"
             >
-              I'm <span className="text-foreground">Yajaira Huerta</span>, an MBA candidate at the University of Maryland's Robert H. Smith School of Business — working at the intersection of marketing intelligence, analytics, and AI strategy across startups and multinationals in the U.S. and Peru.
+              I'm <span className="text-foreground">Yajaira Huerta</span>, an MBA graduate of the University of Maryland's Robert H. Smith School of Business — working at the intersection of marketing intelligence, analytics, and AI strategy across startups and multinationals in the U.S. and Peru.
             </motion.p>
 
             <motion.div
@@ -116,11 +116,11 @@ function HomePage() {
               />
             </div>
             <div className="absolute -bottom-6 -left-6 hidden rounded-2xl border border-border bg-card p-5 shadow-editorial md:block">
-              <p className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">Now</p>
+              <p className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">Degree</p>
               <p className="mt-1 font-display text-lg leading-tight">
-                MBA · AI & Business Strategy
+                MBA, Class of 2026
               </p>
-              <p className="text-xs text-muted-foreground">Smith School · Class of 2026</p>
+              <p className="text-xs text-muted-foreground">Smith School · AI & Business Strategy</p>
             </div>
           </motion.div>
         </div>

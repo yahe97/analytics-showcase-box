@@ -45,7 +45,7 @@ export function SiteFooter() {
         <div>
           <p className="font-display text-2xl tracking-tight">Yajaira Huerta</p>
           <p className="mt-2 max-w-xs text-sm text-muted-foreground">
-            MBA Candidate at the Robert H. Smith School of Business. Marketing intelligence, data & AI strategy.
+            MBA, Class of 2026 — Robert H. Smith School of Business. Marketing intelligence, data & AI strategy.
           </p>
         </div>
         <div className="text-sm">
