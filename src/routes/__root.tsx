@@ -33,14 +33,14 @@ export const Route = createRootRoute({
       {
         name: "description",
         content:
-          "Portfolio of Yajaira Huerta — MBA candidate at the Robert H. Smith School of Business. Marketing intelligence, data analytics, and AI strategy.",
+          "Portfolio of Yajaira Huerta — MBA graduate of the Robert H. Smith School of Business. Marketing intelligence, data analytics, and AI strategy.",
       },
       { name: "author", content: "Yajaira Huerta" },
       { property: "og:title", content: "Yajaira Huerta — MBA · Marketing Intelligence · Data & AI Strategy" },
       {
         property: "og:description",
         content:
-          "MBA candidate translating data into business growth, customer insight, and operational impact.",
+          "MBA graduate translating data into business growth, customer insight, and operational impact.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
